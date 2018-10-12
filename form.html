@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ubermelon Order Form</title>
+  </head>
+  <body>
+    <h1 title = "Ubermelon Order Form">Order!</h1>
+    <h3>Prices</h3>
+    <table>
+        <tr>
+            <th>Melon Name</th>
+            <th>Price per lb</th>
+        </tr>
+        <tr>
+            <td>Watermelon</td>
+            <td>$1.59</td>
+        </tr>
+        <tr>
+            <td>Honeydew</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+            <td>Canteloupe</td>
+            <td>$1.29</td>
+        </tr>
+        <tr>
+            <td>Crenshaw</td>
+            <td>$2.19</td>
+        </tr>
+        <tr>
+            <td>Canary</td>
+            <td>$11.99</td>
+        </tr>
+    </table>
+    <p>Place your orders here! You know you want to.</p>
+    <form>
+      First Name: <input type="text" name="firstname">
+    </form>
+    <form>
+      Last Name: <input type="text" name="lastname">
+    </form>
+    <form>
+      Melon Type:
+       <select name="melontype">
+         <option value="watermelon">Watermelon</option>
+         <option value="cateloupe">Canteloupe</option>
+       </select>
+    </form>
+    <form>
+        Quantity: <input type="text" name="quantity">
+    </form>
+    <form>
+        Delivery Time: 
+        <input type = "radio" name = "ampm" value = "am">AM
+        <input type = "radio" name = "ampm" value = "pm">PM
+        <input type = "radio" name = "ampm" value = "wat">Time is an illusion
+    </form>
+    <form>
+      Return Customer: 
+        <input type = "radio" name = "returning" value = "yes">Yes
+        <input type = "radio" name = "returning" value = "no">No
+    </form>
+    <form>
+      For Statistical Purposes:
+        <input type = "checkbox" name = "stats" value = "dog">Dog
+        <input type = "checkbox" name = "stats" value = "cat">Cat
+        <input type = "checkbox" name = "stats" value = "hedgehog">Hedgehog
+        <input type = "checkbox" name = "stats" value = "balloonicorn">Balloonicorn
+    </form>
+    <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+        <input type= "submit">
+    </form>
+  </body>
+  <footer>
+    <p>*Quantities given are by the flat.</p>
+  </footer>
+</html>
